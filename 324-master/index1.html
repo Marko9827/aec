@@ -1,0 +1,702 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        PRODEOR DESIGN
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="" />
+
+
+
+
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner" id="fh5co-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);">
+        <div class="fluid-container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a  class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+
+                    <a class="navbar-brand" href="/"><img src="images/logo.png" style="width: 20px; float:left; margin-right: 10px;" />Prodecor Design</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+                        <li><a style="cursor:pointer;" data-nav-section="explore"><span>Projects</span></a></li>
+
+                        <li><a style="cursor:pointer;" data-nav-section="trusted"><span>Patners</span></a></li>
+                        <li>
+                            <a style="cursor:pointer;
+  bottom: 0px;"><span>Gallery  <i class="icon-arrow-down"></i></span></a>
+
+                            <div class="menu-wrap">
+
+                                <nav class="menu">
+                                    <ul class="clearfix">
+                                        <li>
+
+                                            <ul class="sub-menu" style="cursor:pointer;">
+                                                <li><a onclick="na4()" style="cursor:pointer;">Furniture</a></li>
+                                                <li><a onclick="na3()" style="cursor:pointer;">Living room</a></li>
+                                                <li><a onclick="na2()" style="cursor:pointer;">Kitchens</a></li>
+                                                <li><a onclick="na1()" style="cursor:pointer;">The whole gallery</a></li>
+
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </li>
+                        <li><a style="cursor:pointer;" data-nav-section="about"><span>About</span></a></li>
+                        <li><a style="cursor:pointer;" data-nav-section="con"><span>Contact</span></a></li>
+
+                        <li style="cursor:pointer;"><a style="cursor:pointer; margin-right:-25px;" onclick="RS()"><span>RS</span></a></li>
+                        <li><a><span> | </span></a></li>
+                        <li class="active" style="cursor:pointer;"><a style="cursor:pointer; margin-left:-25px; color:brown;" data-nav-section="home" onclick="myFunction()"><span>EN</span></a></li>
+
+                    </ul>
+                    <script>
+                        function RS() {
+                            window.location.href = 'indexRS.html';
+                        }
+
+                        function na1() {
+                            window.location.href = 'gallery4_RS.html';
+
+                        }
+                        function na2() {
+                            window.location.href = 'gallery3_EN_kuhinja.html';
+                        }
+
+                        function na3() {
+                            window.location.href = 'gallery2_EN_dnevnasoba.html';
+                        }
+
+                        function na4() {
+                            window.location.href = 'gallery1_EN_namestaj.html';
+                        }
+
+                    </script>
+                    <style>
+                        #snackbar {
+                            visibility: hidden;
+                            min-width: 250px;
+                            margin-left: -125px;
+                            background-color: white;
+                            border: 3px outset #ff6a00;
+                            color: #ff6a00;
+                            text-align: center;
+                            border-radius: 2px;
+                            padding: 16px;
+                            position: fixed;
+                            z-index: 1;
+                            left: 50%;
+                            bottom: 30px;
+                            font-size: 17px;
+                            border: 15px;
+                        }
+
+
+
+                            #snackbar.show {
+                                visibility: visible;
+                                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                            }
+
+                        @-webkit-keyframes fadein {
+                            from {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+
+                            to {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+                        }
+
+                        @keyframes fadein {
+                            from {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+
+                            to {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+                        }
+
+                        @-webkit-keyframes fadeout {
+                            from {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+
+                            to {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+                        }
+
+                        @keyframes fadeout {
+                            from {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+
+                            to {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+                        }
+                    </style>
+
+
+
+                    <div id="snackbar">You're already on the English site...</div>
+
+
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("snackbar")
+                            x.className = "show";
+                            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                        }
+                    </script>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_3.jpg);" data-stellar-background-ratio="0.5">
+        <div class="gradient"></div>
+        <div class="container">
+            <div class="text-wrap">
+                <div class="text-inner">
+                    <!--<div class="row" >
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h1 class="to-animate">Custom furniture production</h1>
+                            <h2 class="to-animate">- kitchen, closets, tables, chairs, furniture for the premises, business and residential buildings .... </h2>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="fh5co-services" data-section="services">
+
+        <div class="core-features" style="margin-top:-160px;">
+
+            <div class="grid2 ">
+                <div class="core-f">
+
+                    <div class="row">
+                        <div class="box-faq to-animate-2">
+
+                            <div class="desc">
+                                <h2>
+                                    Delivery Speed?
+                                </h2>
+                                <p style="font-size:20px;">
+                                    kitchens, closets, tables, chairs, furniture for business premises, business and residential buildings ....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid2 fh5co-bg-color">
+                <div class="core-f">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="core">
+                                <i class="icon-check-square to-animate-2"></i>
+                                <div class="fh5co-post to-animate">
+                                    <h3>
+                                        High quality
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="core">
+                                <i class="icon-paint-brush to-animate-2"></i>
+                                <div class="fh5co-post to-animate">
+                                    <h3>Palette of natural colors</h3>
+                                </div>
+                            </div>
+                            <div class="core">
+                                <i class="icon-book to-animate-2"></i>
+                                <div class="fh5co-post to-animate">
+                                    <h3 style="color:red;">Order by arrangement</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="core">
+                                <i class="icon-shield to-animate-2"></i>
+                                <div class="fh5co-post to-animate">
+                                    <h3>Security in strength</h3>
+                                </div>
+                            </div>
+                            <div class="core">
+                                <i class="icon-marquee-plus to-animate-2"></i>
+                                <div class="fh5co-post to-animate">
+                                    <h3>On-site installation</h3>
+                                </div>
+                            </div>
+                            <div class="core">
+                                <i class="icon-columns2 to-animate-2"></i>
+                                <div class="fh5co-post to-animate">
+                                    <h3>Customized design for all rooms</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+</section>
+    <section id="fh5co-explore" data-section="explore">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate"><span>Explore Our Projects</span></h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 subtext to-animate">
+                            <h3>
+                                WHO WE ARE SPECIALLY PREVIOUS
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fh5co-project">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="project-grid to-animate-2" style="background-image:  url(images/project-1.jpg);">
+                            <div class="desc">
+                                <h3><a href="https://www.instagram.com/p/Bc0cXSIBpjM/" target="_blank">Fioke</a></h3>
+                                <span>Kitchens</span>
+                                <p class="download"><a href="https://www.instagram.com/p/Bc0cXSIBpjM/" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="project-grid to-animate-2" style="background-image:  url(images/project-2.jpg);">
+                                    <div class="desc">
+                                        <h3><a href="https://www.instagram.com/p/Be-p2L0ACd7/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                        <span>Kitchens</span>
+                                        <p class="download"><a href="https://www.instagram.com/p/Be-p2L0ACd7/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-grid to-animate-2" style="background-image:  url(images/project-5.jpg);">
+                                    <div class="desc">
+                                        <h3><a href="https://www.instagram.com/p/BXvG7i6hgG0/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                        <span>Kitchens</span>
+                                        <p class="download"><a href="https://www.instagram.com/p/BXvG7i6hgG0/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-grid to-animate-2" style="background-image:  url(images/project-9.jpg);">
+                            <div class="desc">
+                                <h3><a href="https://www.facebook.com/prodecor.zemun/" target="_blank">
+    Living room
+</a></h3>
+                                <span>Kitchens</span>
+                                <p class="download"><a href="https://www.facebook.com/prodecor.zemun/" target="_blank"><i class="icon-facebook"></i></a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="project-grid to-animate-2" style="background-image:  url(images/project-4.jpg);">
+                            <div class="desc">
+                                <h3><a href="https://www.instagram.com/p/BceudV1Blya/" target="_blank">Fioke</a></h3>
+                                <span>Kitchens</span>
+                                <p class="download"><a href="https://www.instagram.com/p/BceudV1Blya/" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                            </div>
+                        </div>
+                        <div class="project-grid to-animate-2" style="background-image:  url(images/project-3.jpg);">
+                            <div class="desc">
+                                <h3><a href="https://www.instagram.com/p/Bat-jqXhNSi/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                <span>Kitchens</span>
+                                <p class="download"><a href="https://www.instagram.com/p/Bat-jqXhNSi/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="project-grid to-animate-2" style="background-image:  url(images/project-10.jpg);">
+                                    <div class="desc">
+                                        <h3><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                        <span>Fioke</span>
+                                        <p class="download"><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-grid to-animate-2" style="background-image:  url(images/project-11.jpg);">
+                                    <div class="desc">
+                                        <h3><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                        <span>Fioke</span>
+                                        <p class="download"><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="project-grid to-animate-2" style="background-image:  url(images/project-6.jpg);">
+                                    <div class="desc">
+                                        <h3><a href="https://www.instagram.com/prodecor_design/" target="_blank">Fioke</a></h3>
+                                        <span>Kitchens</span>
+                                        <p class="download"><a href="https://www.instagram.com/prodecor_design/" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-grid to-animate-2" style="background-image:  url(images/project-7.jpg);">
+                                    <div class="desc">
+                                        <h3><a href="https://www.instagram.com/p/BahIlgehawt/?taken-by=prodecor_design" target="_blank">Table</a></h3>
+                                        <span>Living Room</span>
+                                        <p class="download"><a href="https://www.instagram.com/p/BahIlgehawt/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-grid to-animate-2" style="background-image:  url(images/project-8.jpg);">
+                            <div class="desc">
+                                <h3><a href="https://www.facebook.com/prodecor.zemun/" target="_blank">Fioke</a></h3>
+                                <span>Kitchens</span>
+                                <p class="download"><a href="https://www.facebook.com/prodecor.zemun/" target="_blank"><i class="icon-facebook"></i></a></p>
+
+                            </div>
+                        </div>
+                        <div class="project-grid to-animate-2" style="background-image:  url(images/project-12.jpg);">
+                            <div class="desc">
+                                <h3><a href="https://www.facebook.com/prodecor.zemun/" target="_blank">Fioke</a></h3>
+                                <span>Kitchens</span>
+                                <p class="download"><a href="https://www.facebook.com/prodecor.zemun/" target="_blank"><i class="icon-facebook"></i></a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fh5co-counter-section" class="fh5co-counters">
+            <div class="container">
+
+                <div class="row to-animate">
+                    <div class="col-md-3 text-center">
+                        <span class="fh5co-counter js-counter" data-from="0" data-to="240" data-speed="5000" data-refresh-interval="50"></span>
+                        <span class="fh5co-counter-label">
+                            PROJECTS
+                        </span>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <span class="fh5co-counter js-counter" data-from="0" data-to="304" data-speed="5000" data-refresh-interval="50"></span>
+                        <span class="fh5co-counter-label">SATISFIED CLIENTS</span>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <span class="fh5co-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+                        <span class="fh5co-counter-label">INTERNATIONAL PARTNERS</span>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <span class="fh5co-counter js-counter" data-from="0" data-to="240" data-speed="5000" data-refresh-interval="50"></span>
+                        <span class="fh5co-counter-label">YEAR OF EXISTENCE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="fh5co-trusted" data-section="trusted">
+        <div class="fh5co-trusted">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12  text-center">
+                        <h2 class="to-animate"><span>Trusted By</span></h2>
+                        <div class="row">
+                            <div class="col-md-8  subtext">
+
+                                <h3 class="to-animate" style="text-align: center;">
+                                    We’re trusted by these popular companies
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-6 col-sm-offset-0 col-md-offset-1">
+                        <div class="partner-logo to-animate-2">
+                            <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <div class="partner-logo to-animate-2">
+                            <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <div class="partner-logo to-animate-2">
+                            <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <div class="partner-logo to-animate-2">
+                            <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12">
+                        <div class="partner-logo to-animate-2">
+                            <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fh5co-faq" class="fh5co-bg-color" data-section="about">
+        <div class="fh5co-faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 section-heading text-center">
+                        <h2 class="to-animate">
+                            <span>
+                                Frequently asked Questions
+                            </span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 subtext">
+                                <h3 class="to-animate">
+                                    Did not find what you were looking for? Contact us!
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box-faq to-animate-2">
+                            <i class="icon-check2"></i>
+                            <div class="desc">
+                                <h3>Delivery Speed?</h3>
+                                <p>Delivery speed depends on you to us! Within 2/3 hours.</p>
+                            </div>
+                        </div>
+                        <div class="box-faq to-animate-2">
+                            <i class="icon-check2"></i>
+                            <div class="desc">
+                                <h3>I have a technical problem, to whom can I send an email? </h3>
+                                <p>dalibor@primer.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box-faq to-animate-2">
+                            <i class="icon-check2"></i>
+                            <div class="desc">
+                                <h3>
+                                    Where you are located?
+                                </h3>
+                                <p>Srbija/Zemun</p>
+                            </div>
+                        </div>   <div class="box-faq to-animate-2">
+                            <i class="icon-check2"></i>
+                            <div class="desc">
+                                <h3>Is it easy to maintain?</h3>
+                                <p>Yes</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="getting-started getting-started-1">
+        <div class="getting-grid" style="background-image:  url(images/full_image_3.jpg);">
+            <div class="desc">
+                <h2 style="margin-top: 100px;">Getting <span>Started</span></h2>
+                <p>Are you interested in our products? Order now!</p>
+            </div>
+        </div>
+        <a data-nav-section="con" class="getting-grid2">
+            <div class="call-to-action text-center">
+                <p class="sign-up">Order it</p>
+                <p style="font-size: 30px;"><i class="icon-basket"></i></p>
+            </div>
+        </a>
+    </div>
+    <div id="fh5co-footer" role="contentinfo" data-section="con">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 to-animate">
+                    <h3 class="section-title">About Us</h3>
+                    <p>Custom furniture production - kitchen, closets, tables, chairs, furniture for the premises, business and residential buildings ....</p>
+
+                </div>
+                <div class="col-md-4 to-animate">
+                    <h3 class="section-title">Our Address</h3>
+                    <ul class="contact-info">
+                        <li><i class="icon-map-marker"></i>Serbia/Zemun</li>
+                        <li><i class="icon-phone"></i>+ 381 063 333480</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4 to-animate">
+                    <h3 class="section-title">Connect with Us</h3>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/prodecor.zemun/" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/prodecor_design/" target="_blank" class="icon-instagram"></a></li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div id="MarkoNikolic">
+                Created By <a style="cursor:pointer;" onclick="ja()">Marko Nikolić</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <a id="myBtn" class="nav" onclick="topFunction()"><i class="fa fa-arrow-circle-o-up"></i></a>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <style>
+        #snackbar1 {
+            min-width: 250px;
+            left: 40px;
+            background-color: white;
+            border: 3px outset #ff6a00;
+            color: #ff6a00;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 3%;
+            bottom: 30px;
+            font-size: 17px;
+            border: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+        }
+
+            #snackbar1 p {
+                margin-bottom: -10px;
+            }
+
+    </style>
+    <div id="snackbar1">
+        <p><a style="cursor:pointer;" onclick="ja()">Marko Nikolić</a> - DEMO [PRODECOR DESING] | Dostupno do 16.2.2018|00:00AM</p><br />
+        <a  style="cursor:pointer;" onclick="CF()">
+            <span onclick="CF()" style="cursor:pointer;" class="glyphicon glyphicon-fullscreen"></span> CEO EKRAN
+        </a>
+    </div>
+
+    <script>
+        function CF() {
+            if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+                (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+                if (document.documentElement.requestFullScreen) {
+                    document.documentElement.requestFullScreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullScreen) {
+                    document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            } else {
+                if (document.cancelFullScreen) {
+                    document.cancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
+

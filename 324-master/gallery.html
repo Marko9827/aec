@@ -1,0 +1,751 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        PRODEOR DESIGN
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="" />
+    <script>
+        $(document).mousedown(function (e) {
+            if (e.which === 2) {
+                alert("middle click")
+                return false;
+            }
+        });
+    </script>
+
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+
+    <style type="text/css">
+        .gallery-title {
+            font-size: 36px;
+            color: #42B32F;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 70px;
+        }
+
+            .gallery-title:after {
+                content: "";
+                position: absolute;
+                width: 7.5%;
+                left: 46.5%;
+                height: 45px;
+                border-bottom: 1px solid #5e5e5e;
+            }
+
+        .filter-button {
+            font-size: 18px;
+            border: 1px solid #42B32F;
+            border-radius: 5px;
+            text-align: center;
+            color: #42B32F;
+            margin-bottom: 30px;
+        }
+
+            .filter-button:hover {
+                font-size: 18px;
+                border: 1px solid #42B32F;
+                border-radius: 5px;
+                text-align: center;
+                color: #ffffff;
+                background-color: #42B32F;
+            }
+
+        .btn-default:active .filter-button:active {
+            background-color: #42B32F;
+            color: white;
+        }
+
+        .port-image {
+            width: 100%;
+        }
+
+        .gallery_product {
+            margin-bottom: 30px;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        window.alert = function () { };
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css) {
+            if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
+            else $('head > link').filter(':first').replaceWith(defaultCSS);
+        }
+        $(document).ready(function () {
+            var iframe_height = parseInt($('html').height());
+            window.parent.postMessage(iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+
+
+</head>
+<body>
+    <header role="banner" id="fh5co-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10); position: fixed;">
+        <div class="fluid-container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a class="navbar-brand" href="/"><img src="images/logo.png" style="width: 20px; float:left; margin-right: 10px;" />Prodecor Design</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="cursor:pointer;" onclick="H1()" data-nav-section="home"><span>Početna</span></a></li>
+                        <li><a style="cursor:pointer;" onclick="H2()" data-nav-section="explore"><span>Projekti</span></a></li>
+                        <li><a style="cursor:pointer;" onclick="H3()" data-nav-section="trusted"><span>Patneri</span></a></li>
+                        <li>
+                            <a style="cursor:pointer;
+  bottom: 0px;"><span>Galerija  <i class="icon-arrow-down"></i></span></a>
+
+                            <div class="menu-wrap">
+
+                                <nav class="menu">
+                                    <ul class="clearfix">
+                                        <li>
+
+                                            <ul class="sub-menu" style="cursor:pointer;">
+                                                <li><a id="jaa3" onclick="filter3()">Nameštaj</a></li>
+                                                <li><a id="jaa2" onclick="filter2()">Dnevna Soba</a></li>
+                                                <li><a id="jaa4" onclick="filter4()">Kuhinje</a></li>
+                                                <li><a id="jaa1" onclick="filter1()">Cela galerija</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </li>
+                        <li><a style="cursor:pointer;" onclick="H5()" data-nav-section="about"><span>O Nama</span></a></li>
+                        <li><a style="cursor:pointer;" onclick="H5()" data-nav-section="con"><span>Kontakt</span></a></li>
+                        <li class="active" style="cursor:pointer;"><a style="cursor:pointer; margin-right:-25px; color:brown;" data-nav-section="home" onclick="myFunction()"><span>RS</span></a></li>
+                        <li><a><span> | </span></a></li>
+                        <li style="cursor:pointer;"><a onclick="EN()" style="margin-left:-25px;"><span>EN</span></a></li>
+                    </ul>
+                    <script>
+                        function EN() {
+                            window.location.href = 'index1.html';
+                        }
+                        function GA() {
+                            // window.location.href = '#galerija';
+
+                        }
+                        function H1() {
+                            window.location.href = 'indexrs.html#fh5co-home';
+                        }
+
+
+                        function H2() {
+                            window.location.href = 'indexrs.html#fh5co-explore';
+                        }
+
+                        function H3() {
+                            window.location.href = 'indexrs.html#fh5co-trusted';
+                        }
+
+                        function H4() {
+                            window.location.href = 'indexrs.html#fh5co-con';
+                        }
+
+                        function H5() {
+                            window.location.href = 'indexrs.html#fh5co-footer';
+                        }
+
+
+                    </script>
+                    <style>
+
+                        #snackbar {
+                            visibility: hidden;
+                            min-width: 250px;
+                            margin-left: -125px;
+                            background-color: white;
+                            border: 3px outset #ff6a00;
+                            color: #ff6a00;
+                            text-align: center;
+                            border-radius: 2px;
+                            padding: 16px;
+                            position: fixed;
+                            z-index: 1;
+                            left: 50%;
+                            bottom: 30px;
+                            font-size: 17px;
+                            border: 15px;
+                        }
+
+                            #snackbar.show {
+                                visibility: visible;
+                                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                            }
+
+                        @-webkit-keyframes fadein {
+                            from {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+
+                            to {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+                        }
+
+                        @keyframes fadein {
+                            from {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+
+                            to {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+                        }
+
+                        @-webkit-keyframes fadeout {
+                            from {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+
+                            to {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+                        }
+
+                        @keyframes fadeout {
+                            from {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+
+                            to {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+                        }
+                    </style>
+                    <div id="snackbar">
+                        VEĆ STE NA SRPSKOM SAJTU ...
+                    </div>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("snackbar")
+                            x.className = "show";
+                            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                        }
+                    </script>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <div id="fh5co-explore" data-section="galerija">
+
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+            <link rel="stylesheet" href="sass/bootstrap/mixins/319/grid/gallery-grid.css">
+            <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/animate.css">
+            <link rel="stylesheet" href="css/icomoon.css">
+            <link rel="stylesheet" href="css/simple-line-icons.css">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/owl.carousel.min.css">
+            <link rel="stylesheet" href="css/owl.theme.default.min.css">
+            <link rel="stylesheet" href="css/style.css">
+
+        </head>
+        <body onload="f()">
+
+
+
+
+            <div class="container gallery-container" style="margin-top:-30px;">
+                <h1 style="text-align: left; margin-bottom: 71px; "><i class="icon icon-image"></i>Galerija</h1>
+
+                <div style="margin-bottom:70px; margin-top: -40px;">
+                    <button class="btn1" id="ja1" onclick="filter1()">Cela Galerija</button>
+                    <button class="btn1" id="ja3" onclick="filter3()"> Nameštaj</button>
+                    <button class="btn1" id="ja2" onclick="filter2()"> Dnevna Soba</button>
+
+                    <button class="btn1" id="ja4" onclick="filter4()"> Kuhinje</button>
+                </div>
+
+                <p class="page-description text-left"></p>
+
+                <div class="tz-gallery" id="Af" style="display:none;">
+                    <div class="row ">
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated soba " id="soba" style="padding-left: 4px;padding-right: 4px;">
+                            <a id="Test" class="lightbox" data-ng-switch="images/project-2.jpg">
+                                <img src="images/project-2.jpg" alt="Fioke">
+
+                            </a>
+
+
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated soba " id="soba1" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-3.jpg">
+                                <img src="images/project-3.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-4  box-faq to-animate-2 bounceIn animated soba" id="kuhinja" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-4.jpg">
+                                <img src="images/project-4.jpg" alt="Tunnel">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated soba" id="kuhinja1" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-5.jpg">
+                                <img src="images/project-5.jpg" alt="Coast">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="soba2" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-6.jpg">
+                                <img src="images/project-6.jpg" alt="Rails">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja2" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-7.jpg">
+                                <img src="images/project-7.jpg" alt="Traffic">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="namestaj" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-8.jpg">
+                                <img src="images/project-8.jpg" alt="Rocks">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="namestaj1" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/full_image_5.jpg">
+                                <img src="images/full_image_5.jpg" alt="Benches">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="soba3" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/full_image_3.jpg">
+                                <img src="images/full_image_3.jpg" alt="Sky">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja3" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-13.jpg">
+                                <img src="images/project-13.jpg" alt="Sky">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja4" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-14.jpg">
+                                <img src="images/project-14.jpg" alt="Sky">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="soba4" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/full_image_3_2.jpg">
+                                <img src="images/full_image_3_2.jpg" alt="Sky">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja5" style="padding-left: 4px;padding-right: 4px;">
+                            <a class="lightbox" data-ng-switch="images/project-15.jpg">
+                                <img src="images/project-15.jpg" alt="Sky">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <style class="cp-pen-styles">
+                    .loader {
+                        -webkit-animation: spin 1s linear infinite;
+                        animation: spin 1s linear infinite;
+                        border: 3px solid #ddd;
+                        border-top: 3px solid #ff6a00;
+                        border-radius: 50%;
+                        height: 75px;
+                        width: 75px;
+                        left: 50%;
+                        right: 50%;
+                    }
+
+                    @-webkit-keyframes spin {
+                        to {
+                            border-top-color: #ec407a;
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    @keyframes spin {
+                        to {
+                            border-top-color: #8B4513;
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+                </style>
+                <div class="container" id="Av">
+
+                    <div class="loader"></div>
+                </div>
+
+            </div>
+
+
+
+            <script>
+                function f() {
+                    document.getElementById("Af").style = "display: block;";
+                    //  $("Af").animate({ "display":"block" }, 1500);
+                    var timer;
+
+                    document.getElementById("Av").style = "display: none;";
+
+                }
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+            <script>
+                baguetteBox.run('.tz-gallery');
+            </script>
+
+
+
+
+
+        </body>
+    </html>
+
+
+
+
+
+</div>
+
+<script>
+
+
+
+    document.getElementById("soba").style = "display: block; padding-left: 4px;padding-right: 4px;";
+    document.getElementById("soba1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+    document.getElementById("soba2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+    document.getElementById("soba3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+    document.getElementById("soba4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+    //namestaj
+    document.getElementById("namestaj").style = "display: block; padding-left: 4px;padding-right: 4px;";
+    document.getElementById("namestaj1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+    //kuhinja
+
+
+    document.getElementById("ja1").style = "border-bottom: 4px solid #5e5e5e;";
+    document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+    document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+    document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+    document.getElementById("jaa1").style = "border-left: 4px #8B4513 solid;";
+    document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+    document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+    document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+
+
+    function filter1() { //celagalerija
+        //sobe
+        document.getElementById("soba").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        //namestaj
+        document.getElementById("namestaj").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("namestaj1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+        //kuhinja
+
+
+        document.getElementById("ja1").style = "border-bottom: 4px solid #5e5e5e;";
+        document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+        document.getElementById("jaa1").style = "border-left: 4px #8B4513 solid;";
+        document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+    }
+
+    function filter2() { //dnevnasoba
+        //sobe
+        document.getElementById("soba").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+        //kuhinja
+        document.getElementById("kuhinja").style = "display: none;";
+        document.getElementById("kuhinja1").style = "display: none;";
+        document.getElementById("kuhinja2").style = "display: none;";
+        document.getElementById("kuhinja3").style = "display: none;";
+        document.getElementById("kuhinja4").style = "display: none;";
+        document.getElementById("kuhinja5").style = "display: none;";
+
+        //namestaj
+        document.getElementById("namestaj").style = "display: none;";
+        document.getElementById("namestaj1").style = "display: none;";
+
+        document.getElementById("ja2").style = "border-bottom: 4px solid #5e5e5e;";
+
+        document.getElementById("ja1").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+        document.getElementById("jaa2").style = "border-left: 4px #8B4513 solid;";
+        document.getElementById("jaa1").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+
+    }
+
+
+    function filter3() { //namestaj
+        document.getElementById("soba").style = "display: none;";
+        document.getElementById("soba1").style = "display: none;";
+        document.getElementById("soba2").style = "display: none;";
+        document.getElementById("soba3").style = "display: none;";
+        document.getElementById("soba4").style = "display: none;";
+
+        //kuhinja
+        document.getElementById("kuhinja").style = "display: none;";
+        document.getElementById("kuhinja1").style = "display: none;";
+        document.getElementById("kuhinja2").style = "display: none;";
+        document.getElementById("kuhinja3").style = "display: none;";
+        document.getElementById("kuhinja4").style = "display: none;";
+        document.getElementById("kuhinja5").style = "display: none;";
+
+        //namestaj
+        document.getElementById("namestaj").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("namestaj1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+
+        document.getElementById("ja3").style = "border-bottom: 4px solid #5e5e5e;";
+
+
+        document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja1").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+
+
+
+        document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa3").style = "border-left: 4px #8B4513 solid;";
+        document.getElementById("jaa1").style = "border-left: 0px #8B4513 solid;";
+    }
+
+    function filter4() { //kuhinja
+        document.getElementById("soba").style = "display: none;";
+        document.getElementById("soba1").style = "display: none;";
+        document.getElementById("soba2").style = "display: none;";
+        document.getElementById("soba3").style = "display: none;";
+        document.getElementById("soba4").style = "display: none;";
+
+        //kuhinja
+        document.getElementById("kuhinja").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("kuhinja1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("kuhinja2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("kuhinja3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("kuhinja4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("kuhinja5").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+        //namestaj
+        document.getElementById("namestaj").style = "display: none;";
+        document.getElementById("namestaj1").style = "display: none;";
+
+        document.getElementById("ja4").style = "border-bottom: 4px solid #5e5e5e;";
+        document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja1").style = "border-bottom: 0px solid #5e5e5e;";
+
+
+        document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa1").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa4").style = "border-left: 4px #8B4513 solid;";
+    }
+</script>
+
+
+
+
+
+<div id="fh5co-footer" role="contentinfo" data-section="con">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <h3 class="section-title">O Nama</h3>
+                <p>Izrada nameštaja po meri - kuhinja, plakari, stolovi, stolice, nameštaj za prostorije, poslovne i stambene zgrade .... </p>
+            </div>
+            <div class="col-md-4 ">
+                <h3 class="section-title">
+                    Naša adresa
+                </h3>
+                <ul class="contact-info">
+                    <li><i class="icon-map-marker"></i>Serbia/Zemun</li>
+                    <li><i class="icon-phone"></i>+ 381 063 333480</li>
+                </ul>
+            </div>
+            <div class="col-md-4 ">
+                <h3 class="section-title">
+                    Povežite se sa nama
+
+                </h3>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/prodecor.zemun/" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/prodecor_design/" target="_blank" class="icon-instagram"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div id="MarkoNikolic">
+            Napravio <a style="cursor:pointer;" onclick="ja()">Marko Nikolić</a>
+        </div>
+    </div>
+</div>
+<button id="myBtn" onclick="topFunction()"><i class="fa fa-arrow-circle-o-up"></i></button>
+<script src=".../js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+<style>
+
+    #snackbar1 {
+        min-width: 250px;
+        left: 40px;
+        background-color: white;
+        border: 3px outset #ff6a00;
+        color: #ff6a00;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 3%;
+        bottom: 30px;
+        font-size: 17px;
+        border: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    }
+
+        #snackbar1 p {
+            margin-bottom: -10px;
+        }
+</style>
+<div id="snackbar1">
+    <p><a style="cursor:pointer;" onclick="ja()">Marko Nikolić</a> - DEMO [PRODECOR DESING] | Dostupno do 16.2.2018|00:00AM</p><br />
+    <a style="cursor:pointer;" onclick="CF()">
+        <span onclick="CF()" style="cursor:pointer;" class="glyphicon glyphicon-fullscreen"></span> CEO EKRAN
+    </a>
+</div>
+<script>
+    function CF() {
+        if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+            (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+            if (document.documentElement.requestFullScreen) {
+                document.documentElement.requestFullScreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullScreen) {
+                document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }
+    }
+</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".filter-button").click(function () {
+            var value = $(this).attr('data-filter');
+
+            if (value == "all") {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else {
+                //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.' + value).hide('3000');
+                $('.filter').filter('.' + value).show('3000');
+
+            }
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+    });
+</script>
+
+
+</body>
+</html>

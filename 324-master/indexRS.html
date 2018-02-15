@@ -1,0 +1,974 @@
+﻿
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        PRODEOR DESIGN
+
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="" />
+
+
+
+
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+
+    <style>
+
+
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    </style>
+</head>
+<body >
+    <header role="banner" id="fh5co-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);">
+        <div class="fluid-container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a class="navbar-brand" href="/"><img src="images/logo.png" style="width: 20px; float:left; margin-right: 10px;" />Prodecor Design</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a style="cursor:pointer;" data-nav-section="home"><span>Početna</span></a></li>
+                        <li><a style="cursor:pointer;" data-nav-section="explore"><span>Projekti</span></a></li>
+                        <li><a style="cursor:pointer;" data-nav-section="trusted"><span>Patneri</span></a></li>
+                        <li>
+                            <a style="cursor:pointer; 
+  bottom: 0px;"><span>Galerija  <i class="icon-arrow-down"></i></span></a>
+
+                            <div class="menu-wrap">
+
+                                <nav class="menu">
+                                    <ul class="clearfix">
+                                        <li>
+
+                                            <ul class="sub-menu" style="cursor:pointer;">
+                                                <li><a onclick="na4()" style="cursor:pointer;" >Nameštaj</a></li>
+                                                <li><a onclick="na3()" style="cursor:pointer;">Dnevna Soba</a></li>
+                                                <li><a onclick="na2()" style="cursor:pointer;">Kuhinje</a></li>
+                                                <li><a onclick="na1()" style="cursor:pointer;">Cela galerija</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </li>
+
+
+                     
+                        <li><a style="cursor:pointer;" data-nav-section="about"><span>O Nama</span></a></li>
+                        <li><a style="cursor:pointer;" data-nav-section="con"><span>Kontakt</span></a></li>
+                        <li class="active" style="cursor:pointer;"><a style="cursor:pointer; margin-right:-25px; color:brown;" data-nav-section="home" onclick="myFunction()"><span>RS</span></a></li>
+                        <li><a><span> | </span></a></li>
+                        <li style="cursor:pointer;"><a onclick="EN()" style="margin-left:-25px;"><span>EN</span></a></li>
+                    </ul>
+                
+                    <style>
+
+                        #snackbar {
+                            visibility: hidden;
+                            min-width: 250px;
+                            margin-left: -125px;
+                            background-color: white;
+                            border: 3px outset #ff6a00;
+                            color: #ff6a00;
+                            text-align: center;
+                            border-radius: 2px;
+                            padding: 16px;
+                            position: fixed;
+                            z-index: 1;
+                            left: 50%;
+                            bottom: 30px;
+                            font-size: 17px;
+                            border: 15px;
+                        }
+
+                            #snackbar.show {
+                                visibility: visible;
+                                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                            }
+
+                        @-webkit-keyframes fadein {
+                            from {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+
+                            to {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+                        }
+
+                        @keyframes fadein {
+                            from {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+
+                            to {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+                        }
+
+                        @-webkit-keyframes fadeout {
+                            from {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+
+                            to {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+                        }
+
+                        @keyframes fadeout {
+                            from {
+                                bottom: 30px;
+                                opacity: 1;
+                            }
+
+                            to {
+                                bottom: 0;
+                                opacity: 0;
+                            }
+                        }
+                    </style>
+                    <div id="snackbar">
+                        VEĆ STE NA SRPSKOM SAJTU ...
+                    </div>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("snackbar")
+                            x.className = "show";
+                            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                        }
+
+
+
+                        function na1() {
+                            window.location.href = 'gallery.html';
+
+                        }
+                        function na2() {
+                            window.location.href = 'gallery3_RS_kuhinja.html';
+                        }
+
+                        function na3() {
+                            window.location.href = 'gallery2_RS_dnevnasoba.html';
+                        }
+
+                        function na4() {
+                            window.location.href = 'gallery1_RS_namestaj.html';
+                        }
+                    </script>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+ 
+
+
+    
+    <div id="fa">
+        <section id="fh5co-home" class="pop eronelit-animate-fading" data-section="home" style="background-image: url(images/full_image_3.jpg); " data-stellar-background-ratio="0.5">
+            <style>
+                .eronelit-animate-fading{animation:fading 6s infinite}@keyframes fading{0%{opacity:0}30%{opacity:1}100%{opacity:0}}
+            </style>
+
+            <script type="text/javascript">
+                //    $('#fh5co-home').css("background-image", "url(images/full_image_3_2.jpg)");
+                var timer;
+                timer = setTimeout(function () {
+                    $('#fh5co-home').css("background-image", "url(images/full_image_3_2.jpg)");
+                }
+                    , 6000);
+
+                timer = setTimeout(function () {
+                     $('#fh5co-home').css("background-image", "url(images/full_image_5.jpg)");
+                }
+                    , 12000);
+
+                timer = setTimeout(function () {
+                    $('#fh5co-home').css("background-image", "url(images/project-1.jpg)");
+
+                }
+                    , 16000);
+
+
+                timer = setTimeout(function () {
+                    $('#fh5co-home').css("background-image", "url(images/full_image_3_3.jpg)");
+                }
+                    , 19000);
+
+                timer = setInterval(function () {
+                    $('#fh5co-home').css("background-image", "url(images/project-9.jpg)");
+               }
+                   , 22000);
+              
+               
+                //     timer = setInterval(function, 60000);
+              //  timer = setInterval(function, 0000);
+
+             
+           
+
+
+            </script>
+            <div class="gradient">
+</div>
+            <div class="container">
+                <div class="text-wrap">
+                    <div class="text-inner">
+                        <!--<div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <h1 class="to-animate">
+                Izrada nameštaja po meri
+            </h1>
+            <h2 class="to-animate">
+                kuhinje, plakara, stolova, stolica, nameštaja za poslovne prostore, poslovne i stambene zgrade ....
+            </h2>
+        </div>
+    </div>-->
+                    </div>
+                </div>
+                <style>
+                    .hover01 figure img {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transition: .3s ease-in-out;
+                        transition: .3s ease-in-out;
+                    }
+
+                    .hover01 figure:hover img {
+                        -webkit-transform: scale(1.3);
+                        transform: scale(1.3);
+                    }
+                </style>
+            </div>
+        </section>
+
+        <section id="fh5co-services" data-section="services">
+            <div class="core-features" style="margin-top:-160px;">
+                <!--<div class="grid2 to-animate">
+                    <div class="text-wrap">
+                        <div class="text-inner">
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-8 col-md-offset-2 text-center">
+                                    <h1 class="to-animate">
+                                        Izrada nameštaja po meri
+                                    </h1>
+                                    <h2 class="to-animate">
+                                        kuhinje, plakara, stolova, stolica, nameštaja za poslovne prostore, poslovne i stambene zgrade ....
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!---->
+          
+                <div class="grid2 ">
+                    <div class="core-f">
+
+                        <div class="row">
+                            <div class="box-faq to-animate-2">
+
+                                <div class="desc">
+                                    <h2>
+                                        Brzina isporuke?
+
+                                    </h2>
+                                    <p style="font-size:20px;">
+                                        kuhinje, plakara, stolova, stolica, nameštaja za poslovne prostore, poslovne i stambene zgrade ....
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="grid2 fh5co-bg-color">
+                    <div class="core-f">
+                        <h2 class="to-animate">
+                            Prilagođeni ormani i ostali
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="core">
+                                    <i class="icon-check-square to-animate-2"></i>
+                                    <div class="fh5co-post to-animate">
+                                        <h3>
+                                            Visok kvalitet
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="core">
+                                    <i class="icon-paint-brush to-animate-2"></i>
+                                    <div class="fh5co-post to-animate">
+                                        <h3>Paleta prirodnih boja</h3>
+                                    </div>
+                                </div>
+                                <div class="core">
+                                    <i class="icon-book to-animate-2"></i>
+                                    <div class="fh5co-post to-animate">
+                                        <h3 style="color:red;">Porudžbina po dogovoru</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="core">
+                                    <i class="icon-shield to-animate-2"></i>
+                                    <div class="fh5co-post to-animate">
+                                        <h3>Sigurnost u jačinu</h3>
+                                    </div>
+                                </div>
+                                <div class="core">
+                                    <i class="icon-marquee-plus to-animate-2"></i>
+                                    <div class="fh5co-post to-animate">
+                                        <h3>Instalacija na licu mesta</h3>
+                                    </div>
+                                </div>
+                                <div class="core">
+                                    <i class="icon-columns2 to-animate-2"></i>
+                                    <div class="fh5co-post to-animate">
+                                        <h3>Prilagođen dizajn svim prostorijama</h3>
+                                        <!--<p>tekst random ide</p>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="fh5co-explore" data-section="explore">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12  text-center">
+                        <h2 class="to-animate">
+                            <span>
+                                Istražite naše projekte
+                            </span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 subtext to-animate">
+                                <h3>
+                                    Posebno istaknuti
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fh5co-project">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="project-grid to-animate-2" style="background-image:  url(images/project-1.jpg);">
+                                <div class="desc">
+                                    <h3><a href="https://www.instagram.com/p/Bc0cXSIBpjM/" target="_blank">Fioke</a></h3>
+                                    <span>Kuhinje</span>
+                                    <p class="download"><a href="https://www.instagram.com/p/Bc0cXSIBpjM/" target="_blank"><i class="icon-instagram"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="project-grid to-animate-2" style="background-image:  url(images/project-2.jpg);">
+                                        <div class="desc">
+                                            <h3><a href="https://www.instagram.com/p/Be-p2L0ACd7/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                            <span>Kuhinje</span>
+                                            <p class="download"><a href="https://www.instagram.com/p/Be-p2L0ACd7/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="project-grid to-animate-2" style="background-image:  url(images/project-5.jpg);">
+                                        <div class="desc">
+                                            <h3><a href="https://www.instagram.com/p/BXvG7i6hgG0/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                            <span>Kuhinje</span>
+                                            <p class="download"><a href="https://www.instagram.com/p/BXvG7i6hgG0/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-grid to-animate-2" style="background-image:  url(images/project-9.jpg);">
+                                <div class="desc">
+                                    <h3>
+                                        <a href="https://www.facebook.com/prodecor.zemun/" target="_blank">
+                                            Dnevna Soba
+                                        </a>
+                                    </h3>
+                                    <span>Dnevna Soba</span>
+                                    <p class="download"><a href="https://www.facebook.com/prodecor.zemun/" target="_blank"><i class="icon-facebook"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="project-grid to-animate-2" style="background-image:  url(images/project-4.jpg);">
+                                <div class="desc">
+                                    <h3><a href="https://www.instagram.com/p/BceudV1Blya/" target="_blank">Fioke</a></h3>
+                                    <span>Kuhinje</span>
+                                    <p class="download"><a href="https://www.instagram.com/p/BceudV1Blya/" target="_blank"><i class="icon-instagram"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="project-grid to-animate-2" style="background-image:  url(images/project-3.jpg);">
+                                <div class="desc">
+                                    <h3><a href="https://www.instagram.com/p/Bat-jqXhNSi/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                    <span>Kitchens</span>
+                                    <p class="download"><a href="https://www.instagram.com/p/Bat-jqXhNSi/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="project-grid to-animate-2" style="background-image:  url(images/project-10.jpg);">
+                                        <div class="desc">
+                                            <h3><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                            <span>Kuhinje</span>
+                                            <p class="download"><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="project-grid to-animate-2" style="background-image:  url(images/project-11.jpg);">
+                                        <div class="desc">
+                                            <h3><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank">Fioke</a></h3>
+                                            <span>Huhinje</span>
+                                            <p class="download"><a href="https://www.instagram.com/p/BfG5sqgA15b/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="project-grid to-animate-2" style="background-image:  url(images/project-6.jpg);">
+                                        <div class="desc">
+                                            <h3><a href="https://www.instagram.com/prodecor_design/" target="_blank">Kuhinje</a></h3>
+                                            <span>Facebook</span>
+                                            <p class="download"><a href="https://www.instagram.com/prodecor_design/" target="_blank"><i class="icon-instagram"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="project-grid to-animate-2" style="background-image:  url(images/project-7.jpg);">
+                                        <div class="desc">
+                                            <h3><a href="https://www.instagram.com/p/BahIlgehawt/?taken-by=prodecor_design" target="_blank">Sto</a></h3>
+                                            <span>Dnevna Soba</span>
+                                            <p class="download"><a href="https://www.instagram.com/p/BahIlgehawt/?taken-by=prodecor_design" target="_blank"><i class="icon-instagram"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-grid to-animate-2" style="background-image:  url(images/project-8.jpg);">
+                                <div class="desc">
+                                    <h3><a href="https://www.facebook.com/prodecor.zemun/" target="_blank">Nameštaj</a></h3>
+                                    <span>Facebook</span>
+                                    <p class="download"><a href="https://www.facebook.com/prodecor.zemun/" target="_blank"><i class="icon-facebook"></i></a></p>
+                                </div>
+                            </div>
+                            <div class="project-grid to-animate-2" style="background-image:  url(images/project-12.jpg);">
+                                <div class="desc">
+                                    <h3><a href="https://www.facebook.com/prodecor.zemun/" target="_blank">Nameštaj</a></h3>
+                                    <span>Dnevna Soba</span>
+                                    <p class="download"><a href="https://www.facebook.com/prodecor.zemun/" target="_blank"><i class="icon-facebook"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fh5co-counter-section" class="fh5co-counters">
+                <div class="container">
+                    <!--<div class="row">
+                        <div class="col-md-12 section-heading text-center">
+                            <h2 class="to-animate"><span>Some Fun Facts</span></h2>
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 subtext">
+                                    <h3 class="to-animate">tekst random ide Separated they live in Bookmarksgrove. </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="row to-animate">
+                        <div class="col-md-3 text-center">
+                            <span class="fh5co-counter js-counter" data-from="0" data-to="240" data-speed="5000" data-refresh-interval="50"></span>
+                            <span class="fh5co-counter-label">
+                                PROJEKTI
+                            </span>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="fh5co-counter js-counter" data-from="0" data-to="304" data-speed="5000" data-refresh-interval="50"></span>
+                            <span class="fh5co-counter-label">
+                                ZADOVOLJNI KLIJENTI
+                            </span>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="fh5co-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+                            <span class="fh5co-counter-label">
+                                MEĐUNARODNI PARTNERI
+                            </span>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="fh5co-counter js-counter" data-from="0" data-to="240" data-speed="5000" data-refresh-interval="50"></span>
+                            <span class="fh5co-counter-label">
+                                GODINA POSTOJANJA
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="fh5co-trusted" data-section="trusted">
+            <div class="fh5co-trusted">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12  text-center">
+                            <h2 class="to-animate">
+                                <span>
+                                    Naši patneri
+                                </span>
+                            </h2>
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 subtext">
+                                    <h3 class="to-animate">
+                                        Ovim popularnim kompanijama verujemo!
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3 col-xs-6 col-sm-offset-0 col-md-offset-1">
+                            <div class="partner-logo to-animate-2">
+                                <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="partner-logo to-animate-2">
+                                <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="partner-logo to-animate-2">
+                                <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="partner-logo to-animate-2">
+                                <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            <div class="partner-logo to-animate-2">
+                                <img src="images/logo_S.jpg" alt="Partners" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fh5co-faq" class="fh5co-bg-color" data-section="about">
+            <div class="fh5co-faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12  text-center">
+                            <h2 class="to-animate"><span>Najčešća pitanja</span></h2>
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 subtext">
+                                    <h3 class="to-animate">Niste pronašli ono što ste tražili? Kontaktirajte nas!</h3>
+                                    <script>
+                                        function FAS() {
+                                            $(window).animate({ scrollTop: 0 });
+
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-faq to-animate-2">
+                                <i class="icon-check2"></i>
+                                <div class="desc">
+                                    <h3>
+                                        Brzina isporuke?
+
+                                    </h3>
+                                    <p>
+                                        Brzina isporuke zavisi od vas do nas! U roku od 2/3 sata.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-faq to-animate-2">
+                                <i class="icon-check2"></i>
+                                <div class="desc">
+                                    <h3>
+                                        Ja imam tehnički problem, kome mogu da pošaljem email?
+                                    </h3>
+                                    <p>dalibor@primer.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box-faq to-animate-2">
+                                <i class="icon-check2"></i>
+                                <div class="desc">
+                                    <h3>
+                                        Gde se nalazite?
+                                    </h3>
+                                    <p>Srbija/Zemun</p>
+                                </div>
+                            </div>
+                            <div class="box-faq to-animate-2">
+                                <i class="icon-check2"></i>
+                                <div class="desc">
+                                    <h3>Da li se lako održava?</h3>
+                                    <p>Da</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="getting-started getting-started-1">
+            <div class="getting-grid" style="background-image:  url(images/full_image_3.jpg);">
+                <div class="desc">
+                    <h2 style="margin-top: 100px;">
+                        Po
+                        <span style="margin-left:-8px;">četak</span>
+                    </h2>
+                    <p>
+                        Da li ste zainteresovani za naše proizvode? Poručite odmah!
+                    </p>
+                </div>
+            </div>
+            <a data-nav-section="con" class="getting-grid2">
+                <div class="call-to-action text-center">
+                    <p class="sign-up">
+                        Naruči
+                    </p>
+                    <p style="font-size: 30px;"><i class="icon-basket"></i></p>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+
+    <div id="fh5co-footer" role="contentinfo" data-section="con">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 to-animate">
+                    <h3 class="section-title">O Nama</h3>
+                    <p>Izrada nameštaja po meri - kuhinja, plakari, stolovi, stolice, nameštaj za prostorije, poslovne i stambene zgrade .... </p>
+                </div>
+                <div class="col-md-4 to-animate">
+                    <h3 class="section-title">
+                        Naša adresa
+                    </h3>
+                    <ul class="contact-info">
+                        <li><i class="icon-map-marker"></i>Serbia/Zemun</li>
+                        <li><i class="icon-phone"></i>+ 381 063 333480</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 to-animate">
+                    <h3 class="section-title">
+                        Povežite se sa nama
+
+                    </h3>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/prodecor.zemun/" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/prodecor_design/" target="_blank" class="icon-instagram"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div id="MarkoNikolic">
+                Napravio <a style="cursor:pointer;" onclick="ja()">Marko Nikolić</a>
+            </div>
+        </div>
+    </div>
+    <button id="myBtn" onclick="topFunction()"><i class="fa fa-arrow-circle-o-up"></i></button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+
+    <style>
+
+        #snackbar1 {
+            min-width: 250px;
+            left: 40px;
+            background-color: white;
+            border: 3px outset #ff6a00;
+            color: #ff6a00;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 3%;
+            bottom: 30px;
+            font-size: 17px;
+            border: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+        }
+
+            #snackbar1 p {
+                margin-bottom: -10px;
+            }
+    </style>
+    <!--<style>
+
+        /*modal fullscreen */
+
+        .modal.modal-fullscreen {
+            /* Maximize the main wrappers on the screen */
+            /* Make the parent wrapper of the modal box a full-width block */
+            /* Remove borders and effects on the content */
+            /**
+	 * /!\ By using this feature, you force the header and footer to be placed
+	 * in an absolute position. You must handle by yourself the margin of the
+	 * content.
+	 */
+        }
+
+            .modal.modal-fullscreen .modal-dialog,
+            .modal.modal-fullscreen .modal-content {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .modal.modal-fullscreen .modal-dialog {
+                margin: 0;
+                width: 100%;
+                animation-duration: 0.6s;
+            }
+
+            .modal.modal-fullscreen .modal-content {
+                border: none;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-box-shadow: inherit;
+                -moz-box-shadow: inherit;
+                -o-box-shadow: inherit;
+                box-shadow: inherit;
+                /* change bg color below */
+                /* background:#1abc9c; */
+            }
+
+            .modal.modal-fullscreen.force-fullscreen {
+                /* Remove the padding inside the body */
+            }
+
+                .modal.modal-fullscreen.force-fullscreen .modal-body {
+                    padding: 0;
+                }
+
+                .modal.modal-fullscreen.force-fullscreen .modal-header,
+                .modal.modal-fullscreen.force-fullscreen .modal-footer {
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                }
+
+                .modal.modal-fullscreen.force-fullscreen .modal-header {
+                    top: 0;
+                }
+
+                .modal.modal-fullscreen.force-fullscreen .modal-footer {
+                    bottom: 0;
+                }
+    </style>-->
+    <div id="snackbar1">
+        <p><a style="cursor:pointer;" onclick="ja()">Marko Nikolić</a> - DEMO [PRODECOR DESING] | Dostupno do 16.2.2018|00:00AM</p><br />
+        <a style="cursor:pointer;" onclick="CF()">
+            <span onclick="CF()" style="cursor:pointer;" class="glyphicon glyphicon-fullscreen"></span> CEO EKRAN
+        </a>
+    </div>
+    <script>
+        function CF() {
+            if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+                (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+                if (document.documentElement.requestFullScreen) {
+                    document.documentElement.requestFullScreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullScreen) {
+                    document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            } else {
+                if (document.cancelFullScreen) {
+                    document.cancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                }
+            }
+        }
+    </script>
+
+    <script>
+        function EN() {
+            window.location.href = 'index1.html';
+        }
+        function GA() {
+            // window.location.href = 'gallery.html';
+            //  document.getElementById("da").style.display = "none";
+            //document.getElementById("ne").style.display = "block";
+           
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            } 
+        }
+    </script>
+
+
+    <!--<div class="modal fade modal-fullscreen  footer-to-bottom" id="myModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog animated zoomInLeft">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                	<h4 class="modal-title">Modal title</h4>
+
+            </div>
+            <div class="modal-body">
+                <p class="">One fine body…</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- /.modal -->
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+
