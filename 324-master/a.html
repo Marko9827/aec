@@ -1,0 +1,325 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="sass/bootstrap/mixins/319/grid/gallery-grid.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="f()">
+    <script>
+
+
+
+        document.getElementById("soba").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("soba4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        //namestaj
+        document.getElementById("namestaj").style = "display: block; padding-left: 4px;padding-right: 4px;";
+        document.getElementById("namestaj1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+        //kuhinja
+
+
+        document.getElementById("ja1").style = "border-bottom: 4px solid #5e5e5e;";
+        document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+        document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+        document.getElementById("jaa1").style = "border-left: 4px #8B4513 solid;";
+        document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+        document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+
+
+        function filter1() { //celagalerija
+            //sobe
+            document.getElementById("soba").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            //namestaj
+            document.getElementById("namestaj").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("namestaj1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+            //kuhinja
+
+
+            document.getElementById("ja1").style = "border-bottom: 4px solid #5e5e5e;";
+            document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+            document.getElementById("jaa1").style = "border-left: 4px #8B4513 solid;";
+            document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+        }
+
+        function filter2() { //dnevnasoba
+            //sobe
+            document.getElementById("soba").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("soba4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+            //kuhinja
+            document.getElementById("kuhinja").style = "display: none;";
+            document.getElementById("kuhinja1").style = "display: none;";
+            document.getElementById("kuhinja2").style = "display: none;";
+            document.getElementById("kuhinja3").style = "display: none;";
+            document.getElementById("kuhinja4").style = "display: none;";
+            document.getElementById("kuhinja5").style = "display: none;";
+
+            //namestaj
+            document.getElementById("namestaj").style = "display: none;";
+            document.getElementById("namestaj1").style = "display: none;";
+
+            document.getElementById("ja2").style = "border-bottom: 4px solid #5e5e5e;";
+
+            document.getElementById("ja1").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+            document.getElementById("jaa2").style = "border-left: 4px #8B4513 solid;";
+            document.getElementById("jaa1").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+
+        }
+
+
+        function filter3() { //namestaj
+            document.getElementById("soba").style = "display: none;";
+            document.getElementById("soba1").style = "display: none;";
+            document.getElementById("soba2").style = "display: none;";
+            document.getElementById("soba3").style = "display: none;";
+            document.getElementById("soba4").style = "display: none;";
+
+            //kuhinja
+            document.getElementById("kuhinja").style = "display: none;";
+            document.getElementById("kuhinja1").style = "display: none;";
+            document.getElementById("kuhinja2").style = "display: none;";
+            document.getElementById("kuhinja3").style = "display: none;";
+            document.getElementById("kuhinja4").style = "display: none;";
+            document.getElementById("kuhinja5").style = "display: none;";
+
+            //namestaj
+            document.getElementById("namestaj").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("namestaj1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+
+            document.getElementById("ja3").style = "border-bottom: 4px solid #5e5e5e;";
+
+
+            document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja1").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja4").style = "border-bottom: 0px solid #5e5e5e;";
+
+
+
+
+            document.getElementById("jaa4").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa3").style = "border-left: 4px #8B4513 solid;";
+            document.getElementById("jaa1").style = "border-left: 0px #8B4513 solid;";
+        }
+
+        function filter4() { //kuhinja
+            document.getElementById("soba").style = "display: none;";
+            document.getElementById("soba1").style = "display: none;";
+            document.getElementById("soba2").style = "display: none;";
+            document.getElementById("soba3").style = "display: none;";
+            document.getElementById("soba4").style = "display: none;";
+
+            //kuhinja
+            document.getElementById("kuhinja").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("kuhinja1").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("kuhinja2").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("kuhinja3").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("kuhinja4").style = "display: block; padding-left: 4px;padding-right: 4px;";
+            document.getElementById("kuhinja5").style = "display: block; padding-left: 4px;padding-right: 4px;";
+
+            //namestaj
+            document.getElementById("namestaj").style = "display: none;";
+            document.getElementById("namestaj1").style = "display: none;";
+
+            document.getElementById("ja4").style = "border-bottom: 4px solid #5e5e5e;";
+            document.getElementById("ja2").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja3").style = "border-bottom: 0px solid #5e5e5e;";
+            document.getElementById("ja1").style = "border-bottom: 0px solid #5e5e5e;";
+
+
+            document.getElementById("jaa2").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa1").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa3").style = "border-left: 0px #8B4513 solid;";
+            document.getElementById("jaa4").style = "border-left: 4px #8B4513 solid;";
+        }
+    </script>
+
+
+
+
+
+
+
+    <div class="container gallery-container" style="margin-top:-30px;">
+        <h1 style="text-align: left; margin-bottom: 71px; "><i class="icon icon-image"></i>Galerija</h1>
+
+        <div style="margin-bottom:70px; margin-top: -40px;">
+            <button class="btn1" id="ja1" onclick="filter1()">Cela Galerija</button>
+            <button class="btn1" id="ja3" onclick="filter3()"> Nameštaj</button>
+            <button class="btn1" id="ja2" onclick="filter2()"> Dnevna Soba</button>
+
+            <button class="btn1" id="ja4" onclick="filter4()"> Kuhinje</button>
+        </div>
+
+        <p class="page-description text-left"></p>
+
+        <div class="tz-gallery" id="Af" style="display:none;">
+            <div class="row ">
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated soba " id="soba" style="padding-left: 4px;padding-right: 4px;">
+                    <a id="Test" class="lightbox" data-ng-switch="images/project-2.jpg">
+                        <img src="images/project-2.jpg" alt="Fioke">
+
+                    </a>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated soba " id="soba1" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-3.jpg">
+                        <img src="images/project-3.jpg" alt="Bridge">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4  box-faq to-animate-2 bounceIn animated soba" id="kuhinja" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-4.jpg">
+                        <img src="images/project-4.jpg" alt="Tunnel">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated soba" id="kuhinja1" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-5.jpg">
+                        <img src="images/project-5.jpg" alt="Coast">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="soba2" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-6.jpg">
+                        <img src="images/project-6.jpg" alt="Rails">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja2" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-7.jpg">
+                        <img src="images/project-7.jpg" alt="Traffic">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="namestaj" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-8.jpg">
+                        <img src="images/project-8.jpg" alt="Rocks">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="namestaj1" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/full_image_5.jpg">
+                        <img src="images/full_image_5.jpg" alt="Benches">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="soba3" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/full_image_3.jpg">
+                        <img src="images/full_image_3.jpg" alt="Sky">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja3" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-13.jpg">
+                        <img src="images/project-13.jpg" alt="Sky">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja4" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-14.jpg">
+                        <img src="images/project-14.jpg" alt="Sky">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="soba4" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/full_image_3_2.jpg">
+                        <img src="images/full_image_3_2.jpg" alt="Sky">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4  box-faq to-animate-2 bounceIn animated " id="kuhinja5" style="padding-left: 4px;padding-right: 4px;">
+                    <a class="lightbox" data-ng-switch="images/project-15.jpg">
+                        <img src="images/project-15.jpg" alt="Sky">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <style class="cp-pen-styles">
+            .loader {
+                -webkit-animation: spin 1s linear infinite;
+                animation: spin 1s linear infinite;
+                border: 3px solid #ddd;
+                border-top: 3px solid #ff6a00;
+                border-radius: 50%;
+                height: 75px;
+                width: 75px;
+                left: 50%;
+                right: 50%;
+            }
+
+            @-webkit-keyframes spin {
+                to {
+                    border-top-color: #ec407a;
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes spin {
+                to {
+                    border-top-color: #8B4513;
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <div class="container" id="Av">
+
+            <div class="loader"></div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function f() {
+            document.getElementById("Af").style = "display: block;";
+            //  $("Af").animate({ "display":"block" }, 1500);
+            var timer;
+
+            document.getElementById("Av").style = "display: none;";
+
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+
+
+
+
+</body>
+</html>
